@@ -1,0 +1,14 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --orange: #EC8B37;
+  --light-orange: rgb(240, 177, 88);
+  --dark-gray: #233040;
+  --light-gray: #23304098;
+  --border: 1px solid;
+  --dark-orange: #B55B1D;
+} 

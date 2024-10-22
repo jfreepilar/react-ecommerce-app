@@ -1,0 +1,25 @@
+.hero-main-container {
+    position: relative;
+}
+
+.hero {
+    background-image: url("../../assets/sample-bg.png");
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    display: flex;
+    gap:200px
+}
+.special-offer {
+    height: 200px;
+    width: 200px;
+
+}
+
+.sale-tag {
+    height: 200px;
+    width: 200px;
+    margin: 200px 0 0 0;
+}

@@ -1,0 +1,85 @@
+.product-detail-addcart {
+    color: var(--dark-gray);
+}
+
+.detail-container {
+    align-items: center;
+    justify-content: space-around;
+}
+
+.detail-container {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    border-radius: 5px;
+    list-style: none;
+    padding: 15px 40px 10px;
+    margin: -10px 0 0;
+    text-align: center;
+}
+
+.detail-image {
+    margin: 15px 0 0;
+    height: 450;
+    width: 500px;
+}
+
+.name {
+    font-size: 2rem;
+    margin: 10px 0 15px;
+    text-align: center;
+}
+
+.detail-star {
+    color: gold;
+    font-size: 1.5rem;
+}
+
+.detail-review {
+    font-size: 1.5rem;
+}
+
+.star-container,
+.price-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.detail-prev-price {
+    text-decoration: line-through;
+    color: gray;
+    font-size: 1.5rem;
+}
+
+.detail-new-price {
+    font-size: 1.5rem;
+}
+
+.detail-shop-container {
+    display: flex;
+    justify-content: end;
+    width: 500px;
+    margin: -10px 0;
+}
+
+.detail-shop {
+    display: flex;
+    font-size: 40px;
+    color: var(--dark-gray);
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+}
+
+.detail-shop:hover {
+    color: var(--light-gray);
+}
+
+.description-container {
+    margin: 10px 100px 10px;
+}
+
+.description-text {
+    font-size: 1.15rem;
+    text-align: center;
+}
