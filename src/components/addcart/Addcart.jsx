@@ -1,6 +1,6 @@
 import React from 'react'
 import "./addcart.css"
-import BackToHome from '../back-to-home/BackToHome';
+import BackToHome from '../BackToHome/BackToHome';
 
 export default function Addcart({cart, setCart}) { 
   const addQuantity = (productTitle) => {

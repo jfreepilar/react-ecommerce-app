@@ -1,5 +1,5 @@
 import React from "react";
-import productData from "./productData.json"
+import productData from "../../constants/product-data.json"
 import { AiFillStar } from "react-icons/ai";
 import { RiShoppingBag4Fill } from "react-icons/ri";
 import { Link } from 'react-router-dom';

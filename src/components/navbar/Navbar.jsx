@@ -2,7 +2,7 @@ import {useState, useEffect} from 'react'
 import { RiShoppingBag4Fill } from "react-icons/ri";
 import {Link} from 'react-router-dom'
 import './navbar.css'
-import stompLogo from '../../assets/logo.png'
+import stompLogo from '/assets/logo.png'
 
 
 export default function Navbar() {

@@ -1,10 +1,10 @@
 import React from "react"
-import productData from "../display-products/productData.json"
+import productData from "../../constants/product-data.json"
 import { AiFillStar } from "react-icons/ai";
 import { RiShoppingBag4Fill } from "react-icons/ri";
 import { useParams, Link } from "react-router-dom";
 import './product-details.css'
-import BackToHome from "../back-to-home/BackToHome.jsx";
+import BackToHome from "../BackToHome/BackToHome.jsx";
 
 const renderStarIcons = (count) => {
     const stars = [];
