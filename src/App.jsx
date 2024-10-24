@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import {Routes, Route} from 'react-router-dom'
-import Layout from './components/Layout/Layout.jsx'
-import DisplayProducts from './components/DisplayProducts/DisplayProducts.jsx'
-import ProductDetails from './components/ProductDetails/ProductDetails.jsx'
-import Addcart from './components/AddCart/Addcart.jsx'
-import "./index.css"
+import Layout from './components/Layout.jsx'
+import DisplayProducts from './components/DisplayProducts.jsx'
+import ProductDetails from './components/ProductDetails.jsx'
+import Addcart from './components/Addcart.jsx'
+// import "./index.css"
 
 
 

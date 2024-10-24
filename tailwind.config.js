@@ -6,7 +6,21 @@ export default {
     "./components/**/*.{js,jsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {        
+        silver : '#C0C0C0',
+        gold : '#FFD700',
+        darkGray : '#233040',
+        lightGray : '#23304098',
+        lightOrange: 'rgb(240, 177, 88)'
+      },
+      gridTemplateColumns: {
+        'auto-fit-minmax' : 'repeat(auto-fit, minmax(300px, 1fr))',
+      },
+      boxShadow: {
+        'customShadow' : '0 5px 10px rgba(0, 0, 0, 0.3)',
+      }
+    },
   },
   plugins: [],
 }

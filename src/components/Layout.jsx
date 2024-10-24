@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
 
-import Navbar from '../navbar/Navbar';
-import Hero from '../hero/Hero';
+import Navbar from './Navbar';
+import Hero from './Hero';
 
 export default function Layout() {
     const location = useLocation();
