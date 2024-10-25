@@ -28,22 +28,22 @@ export default function ProductDetails ({addToCart}) {
     return (
         <div>
           <BackToHome/>
-          <div className='flex items-center justify-around flex-col mt-[-10px] pt-[15px] px-[40px] pb-[10px] '>
+          <div className='flex items-center justify-around flex-col font-roboto mt-[-10px] pt-[15px] px-[40px] pb-[10px] '>
             <div key={product.title}>
                   <img className='my-[15px] w-[500px]' src={product.img} alt={product.title} />
-                  <h2 className='text-4xl text-center mt-3 mb-4'>{product.title}</h2>
+                  <h2 className='text-4xl font-playFairDisplay text-center mt-3 mb-4'>{product.title}</h2>
                   <div className='flex justify-evenly items-center g-3 mb-2'>
                       <div className='text-gold text-2xl inline-flex'>{renderStarIcons(product.rating)}</div>
-                      <p className='text-2xl'>{product.reviews}</p>
+                      <p className='text-[18px]'>{product.reviews}</p>
                   </div>
               <div className='flex justify-center gap-4'>
                   <p className='line-through text-lightGray text-2xl'>{product.prevPrice}</p>  
                   <p className='text-2xl'>{product.newPrice}</p>
               </div>
 
-              <div className='flex justify-center w-[500px] mt-4'>
-                <p className='ml-8 text-[18px] text-darkGray'>Add to Cart</p>
-                <RiShoppingBag4Fill className='text-3xl ml-4 mt-[-3px] cursor-pointer w-fit text-darkGray hover:opacity-80 transition-opacity duration-200 ease-in'    onClick={() => addToCart(product)}/>
+              <div className='flex mt-4 justify-center hover:opacity-80 transition-opacity duration-200 ease-in cursor-pointer' onClick={() => addToCart(product)}>
+                <p className='ml-5 text-[18px] text-darkGray font-bold'>Add to Cart</p>
+                <RiShoppingBag4Fill className='text-2xl ml-3 mt-[-1px] w-fit text-darkGray'/>
               </div>
             </div>
           </div>
