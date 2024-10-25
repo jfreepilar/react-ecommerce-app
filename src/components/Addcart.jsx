@@ -41,7 +41,10 @@ const calculateTotalPrice = () => {
               <div className='flex w-full mt-3 ml-10' key={index}>
                 <div className='w-[55%] flex items-center justify-evenly gap-2 mt-2'>
                   <img className='h-[100px] w-[120px]' src={product.img} alt={product.title}/>
-                  <p className='text-[18px] text-lightGray font-bold'>{product.title}</p>
+                  <div>
+                    <p className='text-[18px] text-darkGray font-bold'>{product.title}</p>
+                    <p className='text-[15px] text-lightGray font-bold'>ID: {product.id}</p>
+                  </div>
                   <p className='text-[18px] text-lightGray font-bold'>{product.newPrice}</p>
                 </div>
 
