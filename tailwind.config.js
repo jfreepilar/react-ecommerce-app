@@ -17,7 +17,8 @@ export default {
         darkGray : '#233040',
         lightGray : '#23304098',
         lightOrange: 'rgb(240, 177, 88)',
-        matisse : '#197391'
+        matisse : '#197391',
+        frenchPass : '#cfeffc'
       },
       gridTemplateColumns: {
         'auto-fit-minmax' : 'repeat(auto-fit, minmax(300px, 1fr))',
