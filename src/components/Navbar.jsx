@@ -23,15 +23,12 @@ export default function Navbar() {
 
 
   return (
-    <>
-        <div className={`${isFixed ? 'bg-orange-400 text-white mx-auto fixed z-[100] top-0 left-0 transition-all duration-500 ease-in' : 'absolute'} 
-                        h-[75px] w-full flex justify-between g-[50px] text-white`}>
-            <img src={stompLogo} className='mt-[-60px] ml-5 h-[200px] w-[200px]'/>
+        <div className={`${isFixed ? 'bg-orange-400 text-white fixed z-[100] top-0 left-0 transition-all duration-500 ease-in' : 'absolute'} 
+                        h-[85px] w-full flex justify-between text-white px-7`}>
+            <img src={stompLogo} className='mt-[-60px] ml h-[200px] w-[200px]'/>
             <Link to="addcart">
-              <div className='text-white text-5xl mt-3 mr-5'rt><RiShoppingBag4Fill/></div>
+              <div className='text-white text-5xl mt-3 m-4'><RiShoppingBag4Fill/></div>
             </Link>
         </div>
-
-    </>
   )
 }

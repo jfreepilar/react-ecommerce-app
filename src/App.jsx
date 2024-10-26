@@ -4,7 +4,7 @@ import Layout from './components/Layout.jsx'
 import DisplayProducts from './components/DisplayProducts.jsx'
 import ProductDetails from './components/ProductDetails.jsx'
 import Addcart from './components/Addcart.jsx'
-// import "./index.css"
+import Footer from './components/Footer.jsx'
 
 
 
@@ -35,6 +35,7 @@ export default function App() {
       <Route path="*" element={<div>404 Not Found</div>} />
     </Route>
   </Routes>
+  <Footer />
 </>
   );
 }
