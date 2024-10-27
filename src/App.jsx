@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import {Routes, Route} from 'react-router-dom'
 import Layout from './components/Layout.jsx'
+import ScrollToTop from './components/ScrollToTop.jsx'
 import DisplayProducts from './components/DisplayProducts.jsx'
 import ProductDetails from './components/ProductDetails.jsx'
 import Addcart from './components/Addcart.jsx'
@@ -10,6 +11,7 @@ import Footer from './components/Footer.jsx'
 
 export default function App() {
   const [cart, setCart] = useState([]);
+
 
   const addToCart = (product) => {
     setCart((prevCart) => {
@@ -27,6 +29,7 @@ export default function App() {
 
   return (
 <>
+  <ScrollToTop />
   <Routes>
     <Route path="/" element={<Layout/>}>
       <Route index element={<DisplayProducts addToCart={addToCart} />} />
