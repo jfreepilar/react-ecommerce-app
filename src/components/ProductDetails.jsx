@@ -3,8 +3,9 @@ import productData from "../constants/product-data.json"
 import { AiFillStar } from "react-icons/ai";
 import { RiShoppingBag4Fill } from "react-icons/ri";
 import { useParams, Link } from "react-router-dom";
-// import './product-details.css'
+import Navbar from "./Navbar.jsx";
 import BackToHome from "./BackToHome.jsx";
+import { ToastContainer } from "react-toastify";
 
 const renderStarIcons = (count) => {
     const stars = [];
@@ -27,7 +28,10 @@ export default function ProductDetails ({addToCart}) {
 
     return (
         <div>
-          <BackToHome/>
+          <div className='ml-8'>
+            <BackToHome />
+          </div>
+
           <div className='flex items-center justify-around flex-col font-roboto mt-[-10px] pt-[15px] px-[40px] pb-[10px] '>
             <div key={product.title}>
                   <img className='my-[15px] w-[500px]' src={product.img} alt={product.title} />
@@ -48,9 +52,10 @@ export default function ProductDetails ({addToCart}) {
             </div>
           </div>
 
-          <div className='mx-[100px] '>
+          <div className='mx-[100px] mb-14'>
               <p className="description-text">Crafted with a premium synthetic upper and breathable mesh, these sneakers feature a durable rubber outsole with enhanced grip. The EVA foam midsole provides maximum comfort and support, while the lightweight design ensures effortless movement. With a true-to-size fit, these sneakers are perfect for running, training, and casual wear.</p>
           </div>
+          <ToastContainer limit={3} className='mt-[-8px]'/>
 
         </div>
     );

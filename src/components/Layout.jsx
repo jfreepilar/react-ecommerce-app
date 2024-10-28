@@ -7,11 +7,12 @@ import Hero from './Hero';
 export default function Layout() {
     const location = useLocation();
     const isHomePage = location.pathname === '/';
-    const isProductDetailsPage = location.pathname.startsWith('/products/') || location.pathname.startsWith('/addcart');
+    // const isProductDetailsPage = location.pathname.startsWith('/products/') || location.pathname.startsWith('/addcart');
+    const isProductDetailsPage = location.pathname.startsWith('/addcart');
 
     return (
         <div>
-            {!isProductDetailsPage && <Navbar />}
+            {!isProductDetailsPage && <Navbar/>}
             {isHomePage && <Hero />}
             <Outlet />
         </div>
