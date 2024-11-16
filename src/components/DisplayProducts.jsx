@@ -15,23 +15,6 @@ const renderStarIcons = (count) => {
     return stars;
   };
 
-// const notify = () => {
-//     toast.info('Added to Cart', {
-//         icon: (<span className="bg-orange-500 text-white text-[16px] rounded-full py-[2px] px-[11px] ml-[35px] font-bold">i</span>),
-//         bodyClassName: "text-[16px] text-center",
-//         progressClassName: "bg-white",
-//         position: "top-center",
-//         autoClose: 2000,
-//         hideProgressBar: true,
-//         closeOnClick: true,
-//         pauseOnHover: true,
-//         draggable: true,
-//         progress: undefined,
-//         theme: "light",
-//         transition: Slide,
-//         });
-// };
-
 export default function DisplayProducts({addToCart}) { 
     return (
 
@@ -58,7 +41,6 @@ export default function DisplayProducts({addToCart}) {
                     </div>
                 ))}
                 <ToastContainer limit={3} className='mt-[-8px]'/>
-
         </div>
     );
 };
